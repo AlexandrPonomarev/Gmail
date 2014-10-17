@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A008BA53129C40E50034DA2D /* iOSPortsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A008BA51129C40E40034DA2D /* iOSPortsViewController.h */; };
+		A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */; };
+		A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */; };
+		A0AA0B6412849ADA004AD70C /* iOSPorts.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0B6212849AD1004AD70C /* iOSPorts.h */; };
+		A0FCC96F14E27155001A0644 /* iOSPortsPackageData.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC96E14E27155001A0644 /* iOSPortsPackageData.m */; };
+		AA747D9F0F9514B9006C5449 /* iOSPorts_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0ED928B12836557009FBCDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0ED928812836550009FBCDC;
+			remoteInfo = "Makefile-iOSPorts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A008BA51129C40E40034DA2D /* iOSPortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsViewController.h; sourceTree = "<group>"; };
+		A008BA52129C40E50034DA2D /* iOSPortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsViewController.m; sourceTree = "<group>"; };
+		A03020E4129B9B400022EA2B /* Makefile-package */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; indentWidth = 8; path = "Makefile-package"; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
+		A03020E5129B9B400022EA2B /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
+		A03020E6129B9B400022EA2B /* iOS-buildenv.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "iOS-buildenv.sh"; sourceTree = "<group>"; };
+		A09F42841293506600A21B9D /* iOSPorts-genlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-genlist.m"; sourceTree = "<group>"; };
+		A0AA0AC912848B18004AD70C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = SOURCE_ROOT; };
+		A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsPackage.h; sourceTree = "<group>"; };
+		A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsPackage.m; sourceTree = "<group>"; };
+		A0AA0B6212849AD1004AD70C /* iOSPorts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts.h; sourceTree = "<group>"; };
+		A0ED927F128362E7009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
+		A0ED928012836334009FBCDC /* iOSPorts-geninfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-geninfo.m"; sourceTree = "<group>"; };
+		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; indentWidth = 8; path = Makefile; sourceTree = SOURCE_ROOT; tabWidth = 8; };
+		A0ED928312836334009FBCDC /* iOSPorts-pkginfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-pkginfo.m"; sourceTree = "<group>"; };
+		A0F7303C12A9C7EF00161B70 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLog; path = ../../ChangeLog; sourceTree = SOURCE_ROOT; };
+		A0FCC96E14E27155001A0644 /* iOSPortsPackageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsPackageData.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts_Prefix.pch; sourceTree = "<group>"; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libiOSPorts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSPorts.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libiOSPorts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* iOSPorts */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA0AC912848B18004AD70C /* COPYING */,
+				A0ED928212836334009FBCDC /* Makefile */,
+				A0F7303C12A9C7EF00161B70 /* ChangeLog */,
+				A0ED927F128362E7009FBCDC /* Makefile */,
+				A03020E3129B9B400022EA2B /* build-aux */,
+				A0AA0AC812848ADA004AD70C /* iOSPorts */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = iOSPorts;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */,
+				A0ED928012836334009FBCDC /* iOSPorts-geninfo.m */,
+				A09F42841293506600A21B9D /* iOSPorts-genlist.m */,
+				A0ED928312836334009FBCDC /* iOSPorts-pkginfo.m */,
+			);
+			name = "Other Sources";
+			path = other;
+			sourceTree = SOURCE_ROOT;
+		};
+		A03020E3129B9B400022EA2B /* build-aux */ = {
+			isa = PBXGroup;
+			children = (
+				A03020E4129B9B400022EA2B /* Makefile-package */,
+				A03020E5129B9B400022EA2B /* configure-wrapper.sh */,
+				A03020E6129B9B400022EA2B /* iOS-buildenv.sh */,
+			);
+			name = "build-aux";
+			path = "../../build-aux";
+			sourceTree = SOURCE_ROOT;
+		};
+		A0AA0AC812848ADA004AD70C /* iOSPorts */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA0AD012848B78004AD70C /* iOSPorts */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+			);
+			name = iOSPorts;
+			path = ports/iOSPorts;
+			sourceTree = "<group>";
+		};
+		A0AA0AD012848B78004AD70C /* iOSPorts */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA0B6212849AD1004AD70C /* iOSPorts.h */,
+				A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */,
+				A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */,
+				A0FCC96E14E27155001A0644 /* iOSPortsPackageData.m */,
+				A008BA51129C40E40034DA2D /* iOSPortsViewController.h */,
+				A008BA52129C40E50034DA2D /* iOSPortsViewController.m */,
+			);
+			path = iOSPorts;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* iOSPorts_Prefix.pch in Headers */,
+				A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */,
+				A0AA0B6412849ADA004AD70C /* iOSPorts.h in Headers */,
+				A008BA53129C40E50034DA2D /* iOSPortsViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		A0ED928812836550009FBCDC /* Makefile-iOSPorts */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = A0ED929412836565009FBCDC /* Build configuration list for PBXLegacyTarget "Makefile-iOSPorts" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = ../../;
+			dependencies = (
+			);
+			name = "Makefile-iOSPorts";
+			passBuildSettingsInEnvironment = 0;
+			productName = "Makefile-iOSPorts";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* iOSPorts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iOSPorts" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0ED928C12836557009FBCDC /* PBXTargetDependency */,
+			);
+			name = iOSPorts;
+			productName = iOSPorts;
+			productReference = D2AAC07E0554694100DB518D /* libiOSPorts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Bindle Binaries";
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iOSPorts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* iOSPorts */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* iOSPorts */,
+				A0ED928812836550009FBCDC /* Makefile-iOSPorts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */,
+				A0FCC96F14E27155001A0644 /* iOSPortsPackageData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0ED928C12836557009FBCDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0ED928812836550009FBCDC /* Makefile-iOSPorts */;
+			targetProxy = A0ED928B12836557009FBCDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/iOSPorts.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = other/iOSPorts_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-M",
+					"-ObjC",
+				);
+				PRODUCT_NAME = iOSPorts;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/iOSPorts.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = other/iOSPorts_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-M",
+					"-ObjC",
+				);
+				PRODUCT_NAME = iOSPorts;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../include;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../include;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A0ED928912836550009FBCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				PRODUCT_NAME = "Makefile-iOSPorts";
+			};
+			name = Debug;
+		};
+		A0ED928A12836550009FBCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_THUMB_SUPPORT = NO;
+				PRODUCT_NAME = "Makefile-iOSPorts";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iOSPorts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iOSPorts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0ED929412836565009FBCDC /* Build configuration list for PBXLegacyTarget "Makefile-iOSPorts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0ED928912836550009FBCDC /* Debug */,
+				A0ED928A12836550009FBCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

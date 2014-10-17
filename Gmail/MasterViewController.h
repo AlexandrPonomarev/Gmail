@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MailCore/MailCore.h>
+#import "SettingsViewController.h"
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <SettingsViewControllerDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 

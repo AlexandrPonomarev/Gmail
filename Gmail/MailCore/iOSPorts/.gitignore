@@ -1,0 +1,11 @@
+*.mode1v3
+*.o
+*.pbxuser
+.DS_Store
+xcuserdata
+/build/
+/build-aux/iOSPorts-geninfo
+/build-aux/iOSPorts-genlist
+/build-aux/iOSPorts-pkginfo
+a.out
+pkgdata_*.m

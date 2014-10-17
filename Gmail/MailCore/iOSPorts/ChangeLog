@@ -1,0 +1,88 @@
+
+iOS Ports Library
+Copyright (C) 2011, 2012 Bindle Binaries
+
+0.7
+      - Changing arguments for external build tool argument from "all" to
+        $(ACTION). (syzdek)
+      - Fixing typos in README. (syzdek)
+      - Fixing compile problems with iOSPorts when compiling for iOS
+        simulator. (syzdek)
+
+0.6   2012-05-30
+      - Updating project files for Xcode 4.3. (syzdek)
+      PCRE
+      - Adding flag to PCRE project to "Skip Install" when building
+        libpcre.a. (syzdek)
+      - Adding quick start instructions for Xcode 4. (syzdek)
+      - Adding OpenSSL as a target dependency for scrypt port. (syzdek)
+
+0.5   2012-02-14
+      iOS Ports
+      - Reverting supported architectures back to armv6, armv7. (syzdek)
+      - Toggling "Skip Install" in the Xcode project files to "YES" in order
+        to allow projects linking to iOS Ports to be distributed with a
+        Ad-Hoc provisioning profile. (syzdek)
+      - Refactoring iOSPorts library to simplify the code base and to reduce
+        the library to a just providing package information without providing
+        a framework for presenting the package information.  The framework
+        is being migrated to BindleKit. (syzdek)
+      - Adding flag to iOSPorts project to "Skip Install" when building
+        libiOSPorts.a. (syzdek)
+      scrypt
+      - Importing scrypt package from lhunath. (https://github.com/lhunath)
+
+0.4   2011-09-04
+      iOS Ports
+      - Moving library's Xcode project from root of iOS Ports to avoid
+        confusion by users. (syzdek)
+      - Modernized project. (syzdek)
+      - Updating README to clarify a few points. (syzdek)
+      - Creating workspace for iOS Ports. (syzdek)
+      - Creating TODO list. (syzdek)
+      OpenLDAP, Cyrus-SASL, OpenSSL
+      - Changing dependencies to avoid Xcode crashes. (syzdek)
+      - Modernizing  project. (syzdek)
+      - Moving example code to new example directory. (syzdek)
+      PCRE
+      - Modernizing  project. (syzdek)
+      - Moving example code to new example directory. (syzdek)
+
+0.3   2011-05-16
+      iOS Ports
+      - Creating group for examples. (syzdek)
+      - Updating projects to use Xcode4. (syzdek)
+
+0.2	2011-01-05
+        OpenLDAP
+        - Updating OpenLDAP example to use TLS connections. (syzdek)
+
+0.1     2010-12-03
+        iOS Ports
+        - Standarding Xcode project files to latest iOS SDK root rather than
+          a specific iOS SDK root to ease future tranistions to newer iOS SDK
+          versions. (Syzdek)
+        - Standarding Xcode project files to deployment target of 3.1.
+          iOS SDK 3.1 was chosen due to a lack of a test device for iOS SDK
+          3.0. (syzdek)
+        - Standarding Xcode project files' build settings on LLVM GCC 4.2
+          instead of GCC 4.2. (syzdek)
+        - Adding iOS Ports Library which provides a mechanism for adding
+          acknowledgements to an iOS Application per licensing requirements
+          of a ported package. (syzdek)
+        - Starting ChangeLog for project. (szyzdek)
+        OpenLDAP
+        - Updating OpenLDAP to demonstrate simple bind and SASL bind with
+          multiple mechanisms. (syzdek) 
+        - Updating OpenLDAP example to use test LDAP server. (Syzdek)
+        PCRE
+        - Updating PCRE package name in port Makefile. (syzdek)
+
+0.0     2010-11-05
+        - Hello World (syzdek)
+        - Adding port of OpenSSL (syzdek)
+        - Adding port of Cyrus SASL (syzdek)
+        - Adding port of OpenLDAP (syzdek)
+        - Adding port of PCRE (syzdek)
+
+

@@ -1,0 +1,332 @@
+
+iOS Ports
+=========
+
+   iOS Ports is a Collection of F/OSS libraries which have been ported to
+   the iPhoneOS/iOS platform.  The conditions of the license of each package
+   included in iOS Ports are believed to allow for use of each package on
+   an iOS device, however a developer should review the license of each
+   package before including it within an application and to verify that the
+   application meets the requirements of the conditions.
+
+
+Contents
+--------
+
+   1. Disclaimer
+   2. Software Requirements
+   3. Directory Map
+   4. Packages
+   5. Quick Start for Xcode 4.2
+   6. Maintainers
+   7. Community
+   8. iOS Ports Users
+   9. Source Code
+
+
+Disclaimer
+----------
+
+   This software is provided by the copyright holders and contributors "as
+   is" and any express or implied warranties, including, but not limited to,
+   the implied warranties of merchantability and fitness for a particular
+   purpose are disclaimed. In no event shall Bindle Binaries be liable for
+   any direct, indirect, incidental, special, exemplary, or consequential
+   damages (including, but not limited to, procurement of substitute goods or
+   services; loss of use, data, or profits; or business interruption) however
+   caused and on any theory of liability, whether in contract, strict
+   liability, or tort (including negligence or otherwise) arising in any way
+   out of the use of this software, even if advised of the possibility of
+   such damage.
+
+
+Software Requirements
+---------------------
+
+   * Git 1.7
+   * Mac OS X 10.7
+   * Xcode 4.3
+   * Xcode Command Line Tools
+   * iOS SDK 5.1
+   * Internet Access (for downloading packages)
+
+
+Directory Map
+-------------
+
+   .gitignore           - Global list of files to ignore
+   LICENSE              - Software license of source code created for the
+                          iOSPorts package.
+   Makefile             - used to perform various global tasks
+   README               - This file.
+   build-aux/           - directory containing support scripts and utilities
+   iOSPorts.xcworkspace - Xcode workspace
+   include/             - Ports will install required header files to this
+                          directory
+   ports/               - contains all ports
+   ports/database/      - Database Clients and Tools
+   ports/devel/         - Development Tools and Libraries
+   ports/iOSports/      - internal source code for iOSPorts support tools
+   ports/security/      - Security Related Tools and Libraries
+   examples/            - contains example code for iOS ports packages
+
+
+Packages
+--------
+
+   Cyrus SASL
+   ----------
+   Location:      ports/security/cyrus-sasl/
+   Includes:      OpenSSL
+   Dependencies:  sasl2 (Cyrus SASL)
+   Add:           ports/security/cyrus-sasl/Cyrus SASL.xcodeproj
+                  ports/security/openssl/openssl.xcodeproj
+   Link With:     libsasl2.a (Cyrus SASL)
+                  libssl.a (openssl)
+                  libcrypto.a (openssl)
+   Description:   A port of Cyrus SASL to the iPhone platform (iOS). An open
+                  source implementations of Simple Authentication and Security
+                  Layer methods.
+
+
+   iOSPorts
+   --------
+   Location:      ports/iOSPorts/
+   Includes:      N/A
+   Dependencies:  iOSPorts (iOSPorts)
+   Add:           ports/iOSPorts/iOSPorts.xcodeproj
+   Link With:     libiOSPorts.a (iOSPorts)
+   Description:   A standalone package for adding iOS Port packages' copyright
+                  information to an iOS package.  Using this library to
+                  display the copyright information should fulfill a packages
+                  distribution requirement according to the Modified BSD
+                  license and similar licenses. Including this project in an
+                  iOS application will not make other iOS Ports packages
+                  available within an application.
+
+
+   OpenLDAP
+   --------
+   Location:      ports/database/openldap/
+   Includes:      Cyrus SASL
+                  OpenSSL
+   Dependencies:  ldap (openldap)
+   Add:           ports/database/openldap/openldap.xcodeproj
+                  ports/security/cyrus-sasl/Cyrus SASL.xcodeproj
+                  ports/security/openssl/openssl.xcodeproj
+   Link With:     libldap.a (openldap)
+                  liblber.a (openldap)
+                  libsasl2.a (Cyrus SASL)
+                  libssl.a (openssl)
+                  libcrypto.a (openssl)
+   Desciption:    A port of OpenLDAP client library to the iOS platform.
+
+
+   OpenSSL
+   -------
+   Location:      ports/security/openssl/
+   Includes:      N/A
+   Dependencies:  ssl (openssl)
+                  crypto (openssl)
+   Add:           ports/security/openssl/openssl.xcodeproj
+   Link With:     libssl.a (openssl)
+                  libcrypto.a (openssl)
+   Description:   A port of OpenSSL's SSL/TLS and Crypto toolkit to the iPhone
+                  platform (iOS).
+
+
+   PCRE
+   ----
+   Location:      ports/devel/pcre/
+   Includes:      N/A
+   Dependencies:  pcre (pcre)
+   Add:           ports/devel/pcre/pcre.xcodeproj
+   Link With:     libpcre.a (pcre)
+   Description:   A port of PCRE (Perl Compatible Regular Expressions) to the
+                  iOS platform (iPhone).
+
+
+   scrypt
+   ------
+   Location:      ports/security/scrypt/
+   Includes:      OpenSSL
+   Dependencies:  scrypt (scrypt)
+   Add:           ports/security/scrypt/scrypt.xcodeproj
+                  ports/security/openssl/openssl.xcodeproj
+   Link With:     libssl.a (openssl)
+                  libcrypto.a (openssl)
+                  libscryptenc.a (scrypt)
+                  libscrypto.a (scrypt)
+                  libutil.a (scrypt)
+   Description:   The scrypt key derivation function was originally developed
+                  for use in the Tarsnap online backup system and is designed
+                  to be far more secure against hardware brute-force attacks
+                  than alternative functions such as PBKDF2 or bcrypt.
+
+
+Quick Start for Xcode 4
+-----------------------
+
+   This tutorial assumes that you are familiar with the following guides
+   available on Apple's Dev Center:
+
+      - Xcode 4 User Guide: Introduction
+      - Xcode 4 User Guide: Orientation to Xcode
+
+   For the sake of clarity, this tutorial uses the following information. Be
+   sure to substitute information appropiate for your project and setup:
+
+      Project Name:           Zebra
+      App Name:               Zebra.app
+      Project File:           Zebra.xcodeproj
+      Project Location:       /Users/zookeeper/Documents/Zebra/
+      iOS Ports Location:     /Users/zookeeper/Documents/iOSPorts/
+      iOS Ports Includes:     /Users/zookeeper/Documents/iOSPorts/include
+      Relative Include Path:  ../iOSPorts/include
+
+   In order to use packages from iOS Ports the following items need
+   to be completed:
+
+      - Download iOS Projects (see "Source Code" section of this README).
+      - Note the package information for the packages to be used (see "Packages"
+        section of this README).
+      - Add iOS Ports Xcode project files to Zebra.xcodeproj.
+      - Update the "Build Phases" in Zebra.xcodeproj
+      - Update the "Build Settings" in Zebra.xcodeproj.
+
+   Add iOS Ports Xcode project files
+   ---------------------------------
+
+      1. Open Zebra.xcodeproj in Xcode.
+      2. On the menubar, select "File" -> "Add Files to 'Zebra'..."
+         A new dialog should appear.
+      4. In the dialog, locate the first Xcode project from the "Add" field
+         of the desired iOS Ports package. For example, if adding OpenLDAP to
+         your project, you would locate "openldap.xcodeproj".
+      5. Click the "Add" button. The xcode project "openldap.xcodeproj" should
+         appear in the "Project Navigator".
+      6. Repeat for the remaining Xcode projects listed in the "Add" field
+         of the desired iOS Ports package.
+
+   Update Build Phases
+   -------------------
+
+      Open the Project Editor
+      1. Display the "Project Navigator" in the "Navigator Area" of Xcode's
+         main window (see "Xcode 4 User Guide").
+      2. Click on the project icon in the project navigator (the project name
+         is visible next to the project icon).  The project's build settings
+         should appear in the "Edit Area" of Xcode's window.
+      3. In "TARGETS" section, select the target which will use the iOS Ports
+         packages.
+
+      Update "Target Dependencies"
+      1. Select the "Build Phases" tab from the project editor.
+      2. Expand the "Target Dependencies" section.
+      3. Click the "+" button under "Target Dependencies". A list of targets
+         should appear.
+      4. Locate the first target from the "Dependencies" field of the desired
+         iOS Ports package. The target should have an icon of a stone building.
+         Using OpenLDAP as an example, you would select "ldap".
+      5. Click the "Add" button.
+      6. Repeat for the remaining targets listed in the "Dependencies" field
+         of the desired iOS Ports package.
+
+      Update "Link Binary With Libraries"
+      1. Select the "Build Phases" tab from the project editor.
+      2. Expand the "Link Binary With Libraries" section.
+      3. Click the "+" button under "Link Binary With Libraries". A list of
+         libraries should appear.
+      4. Locate the first library from the "Link With" field of the desired
+         iOS Ports package. The target should have an icon of a stone building.
+         Using OpenLDAP as an example, you would select "libldap.a".
+      5. Click the "Add" button.
+      6. Repeat for the remaining libraries listed in the "Link With" field of
+         the desired iOS Ports package.
+
+   Update Build Settings
+   ---------------------
+
+      Update Search Paths
+      1. Select the "Build Settings" tab from the project editor.
+      2. Search for the setting titled "Always Search User Paths". Change the
+         value to "Yes". If the editor is displaying setting names instead of
+         setting titles, search for "ALWAYS_SEARCH_USER_PATHS". If the editor
+         if displaying setting definitions instead of setting values, change
+         the definition to "YES".
+      2. Search for the setting titled "User Header Search Paths". Add the
+         relative include path to the iOS Ports include directory. In this
+         example, the relative include path is "../iOSPorts/include" since
+         both Zebra and iOS Ports are in the same parent directory. If the
+         editor is displaying setting names instead of setting titles, search
+         for "USER_HEADER_SEARCH_PATHS".
+
+   The project Zebra should now be ready to compile the required static
+   libraries and link to them.  The source for the iOS Ports packages will
+   be downloaded the first time the packages are compiled.
+
+   When using two or more iOS Ports packages, it is not necessary to follow
+   these instructions for packages which are already included by other
+   packages.  For example, including OpenLDAP automatically includes OpenSSL
+   and Cyrus SASL.
+
+
+Maintainers
+-----------
+
+   David M. Syzdek
+   Bindle Binaries
+   syzdek@bindlebinaries.com
+
+
+Community
+---------
+
+   Mailing List:
+      ios-ports@lists.bindlebinaries.com
+      https://lists.bindlebinaries.com/mailman/listinfo/ios-ports
+
+   Wiki:
+      https://github.com/bindle/iOSPorts/wiki
+
+   Issue Tracking:
+      https://github.com/bindle/iOSPorts/issues
+
+
+iOS Ports Users
+---------------
+
+   The following organizations are known to use iOS Ports. To have your
+   project or organzation added to the list, please contact David M.
+   Syzdek <syzdek@bindlebinaries.com>.
+
+      Bindle Binaries
+      http://www.bindlebinaries.com/
+
+      SAP
+      http://www.sap.com/
+
+
+Source Code
+-----------
+
+The source code for this project is maintained using git (http://git-scm.com).
+The following contains information to checkout the source code from the git
+repository.
+
+   Git URLs:
+      git://github.com/bindle/iOSPorts.git
+      git://git.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
+      http://http.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
+      ssh://ssh.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
+
+   Downloading Source:
+
+      $ git clone git://github.com/bindle/iOSPorts.git
+
+   Git Branches:
+      master - Current release of packages.
+      next   - changes staged for next release
+      pu     - proposed updates for next release
+      xx/yy+ - branch for testing new changes before merging to 'pu' branch
+

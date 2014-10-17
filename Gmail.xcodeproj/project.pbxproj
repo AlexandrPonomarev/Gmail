@@ -22,6 +22,18 @@
 		96666C0E19F0033A00C9E84E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96666BED19F0033A00C9E84E /* UIKit.framework */; };
 		96666C1619F0033A00C9E84E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96666C1419F0033A00C9E84E /* InfoPlist.strings */; };
 		96666C1819F0033A00C9E84E /* GmailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96666C1719F0033A00C9E84E /* GmailTests.m */; };
+		96666C3319F0063000C9E84E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96666C3219F0063000C9E84E /* CFNetwork.framework */; };
+		96666C3519F0063700C9E84E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96666C3419F0063700C9E84E /* Security.framework */; };
+		96666C5E19F0076A00C9E84E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96666C5D19F0076A00C9E84E /* libiconv.dylib */; };
+		96A88B8419F022C6004FC025 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A88B7219F022C6004FC025 /* SettingsViewController.m */; };
+		96A88B8519F022C6004FC025 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96A88B7319F022C6004FC025 /* SettingsViewController.xib */; };
+		96A88B8619F022C6004FC025 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A88B7519F022C6004FC025 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96A88B8719F022C6004FC025 /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A88B7719F022C6004FC025 /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96A88B8C19F022C6004FC025 /* MCOCIDURLProtocol.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96A88B8019F022C6004FC025 /* MCOCIDURLProtocol.mm */; };
+		96A88B8D19F022C6004FC025 /* MCOMessageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96A88B8219F022C6004FC025 /* MCOMessageView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96A88B9619F02318004FC025 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A88B9419F02318004FC025 /* FXKeychain.m */; };
+		96A88B9A19F02348004FC025 /* MCTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A88B9919F02348004FC025 /* MCTTableViewCell.m */; };
+		96B9213B19F0FB3200496C99 /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B9213019F0FB1D00496C99 /* libMailCore-ios.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +43,55 @@
 			proxyType = 1;
 			remoteGlobalIDString = 96666BE519F0033A00C9E84E;
 			remoteInfo = Gmail;
+		};
+		96B9212D19F0FB1D00496C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA537169E772200778456;
+			remoteInfo = "static mailcore2 osx";
+		};
+		96B9212F19F0FB1D00496C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+		96B9213119F0FB1D00496C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA78C169F259200778456;
+			remoteInfo = tests;
+		};
+		96B9213319F0FB1D00496C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6A81B911706840C00882C15;
+			remoteInfo = "test-ios";
+		};
+		96B9213519F0FB1D00496C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
+			remoteInfo = "mailcore osx";
+		};
+		96B9213719F0FB1D00496C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27780C3A19CF9CD100C77E44;
+			remoteInfo = "mailcore ios";
+		};
+		96B9213919F0FB2700496C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BA2B091705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,6 +117,25 @@
 		96666C1319F0033A00C9E84E /* GmailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GmailTests-Info.plist"; sourceTree = "<group>"; };
 		96666C1519F0033A00C9E84E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96666C1719F0033A00C9E84E /* GmailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GmailTests.m; sourceTree = "<group>"; };
+		96666C3219F0063000C9E84E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		96666C3419F0063700C9E84E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		96666C5D19F0076A00C9E84E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		96A88B7119F022C6004FC025 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		96A88B7219F022C6004FC025 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		96A88B7319F022C6004FC025 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		96A88B7419F022C6004FC025 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		96A88B7519F022C6004FC025 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		96A88B7619F022C6004FC025 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		96A88B7719F022C6004FC025 /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		96A88B7F19F022C6004FC025 /* MCOCIDURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOCIDURLProtocol.h; sourceTree = "<group>"; };
+		96A88B8019F022C6004FC025 /* MCOCIDURLProtocol.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOCIDURLProtocol.mm; sourceTree = "<group>"; };
+		96A88B8119F022C6004FC025 /* MCOMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOMessageView.h; sourceTree = "<group>"; };
+		96A88B8219F022C6004FC025 /* MCOMessageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOMessageView.mm; sourceTree = "<group>"; };
+		96A88B9319F02318004FC025 /* FXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXKeychain.h; sourceTree = "<group>"; };
+		96A88B9419F02318004FC025 /* FXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXKeychain.m; sourceTree = "<group>"; };
+		96A88B9819F02348004FC025 /* MCTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTTableViewCell.h; sourceTree = "<group>"; };
+		96A88B9919F02348004FC025 /* MCTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTTableViewCell.m; sourceTree = "<group>"; };
+		96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +143,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B9213B19F0FB3200496C99 /* libMailCore-ios.a in Frameworks */,
+				96666C5E19F0076A00C9E84E /* libiconv.dylib in Frameworks */,
+				96666C3519F0063700C9E84E /* Security.framework in Frameworks */,
+				96666C3319F0063000C9E84E /* CFNetwork.framework in Frameworks */,
 				96666BEC19F0033A00C9E84E /* CoreGraphics.framework in Frameworks */,
 				96666BEE19F0033A00C9E84E /* UIKit.framework in Frameworks */,
 				96666BEA19F0033A00C9E84E /* Foundation.framework in Frameworks */,
@@ -104,6 +188,9 @@
 		96666BE819F0033A00C9E84E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96666C5D19F0076A00C9E84E /* libiconv.dylib */,
+				96666C3419F0063700C9E84E /* Security.framework */,
+				96666C3219F0063000C9E84E /* CFNetwork.framework */,
 				96666BE919F0033A00C9E84E /* Foundation.framework */,
 				96666BEB19F0033A00C9E84E /* CoreGraphics.framework */,
 				96666BED19F0033A00C9E84E /* UIKit.framework */,
@@ -115,13 +202,17 @@
 		96666BEF19F0033A00C9E84E /* Gmail */ = {
 			isa = PBXGroup;
 			children = (
-				96666BF819F0033A00C9E84E /* AppDelegate.h */,
-				96666BF919F0033A00C9E84E /* AppDelegate.m */,
-				96666BFB19F0033A00C9E84E /* Main.storyboard */,
-				96666BFE19F0033A00C9E84E /* MasterViewController.h */,
-				96666BFF19F0033A00C9E84E /* MasterViewController.m */,
-				96666C0119F0033A00C9E84E /* DetailViewController.h */,
-				96666C0219F0033A00C9E84E /* DetailViewController.m */,
+				96A88BA619F03D52004FC025 /* StoryBoard */,
+				96A88B9C19F03B46004FC025 /* AppDelegate */,
+				96A88B9D19F03B5B004FC025 /* SettingsViewController */,
+				96A88B9E19F03B69004FC025 /* MasterViewController */,
+				96A88B9F19F03B76004FC025 /* DetailViewController */,
+				96A88BA019F03B95004FC025 /* HTTPFetcher */,
+				96A88BA519F03D3A004FC025 /* MailCoreTableViewCell */,
+				96A88BA419F03D31004FC025 /* MailCoreProtocol */,
+				96A88BA319F03D1B004FC025 /* MeilCoreMessageView */,
+				96A88BA119F03CEC004FC025 /* FXKeychain */,
+				96A88BA219F03CFA004FC025 /* MailCore2 */,
 				96666C0419F0033A00C9E84E /* Images.xcassets */,
 				96666BF019F0033A00C9E84E /* Supporting Files */,
 			);
@@ -157,6 +248,119 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		96A88B9C19F03B46004FC025 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				96666BF819F0033A00C9E84E /* AppDelegate.h */,
+				96666BF919F0033A00C9E84E /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		96A88B9D19F03B5B004FC025 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96A88B7119F022C6004FC025 /* SettingsViewController.h */,
+				96A88B7219F022C6004FC025 /* SettingsViewController.m */,
+				96A88B7319F022C6004FC025 /* SettingsViewController.xib */,
+			);
+			name = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		96A88B9E19F03B69004FC025 /* MasterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96666BFE19F0033A00C9E84E /* MasterViewController.h */,
+				96666BFF19F0033A00C9E84E /* MasterViewController.m */,
+			);
+			name = MasterViewController;
+			sourceTree = "<group>";
+		};
+		96A88B9F19F03B76004FC025 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96666C0119F0033A00C9E84E /* DetailViewController.h */,
+				96666C0219F0033A00C9E84E /* DetailViewController.m */,
+			);
+			name = DetailViewController;
+			sourceTree = "<group>";
+		};
+		96A88BA019F03B95004FC025 /* HTTPFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				96A88B7419F022C6004FC025 /* GTMHTTPFetcher.h */,
+				96A88B7519F022C6004FC025 /* GTMHTTPFetcher.m */,
+				96A88B7619F022C6004FC025 /* GTMHTTPFetchHistory.h */,
+				96A88B7719F022C6004FC025 /* GTMHTTPFetchHistory.m */,
+			);
+			name = HTTPFetcher;
+			sourceTree = "<group>";
+		};
+		96A88BA119F03CEC004FC025 /* FXKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				96A88B9319F02318004FC025 /* FXKeychain.h */,
+				96A88B9419F02318004FC025 /* FXKeychain.m */,
+			);
+			name = FXKeychain;
+			sourceTree = "<group>";
+		};
+		96A88BA219F03CFA004FC025 /* MailCore2 */ = {
+			isa = PBXGroup;
+			children = (
+				96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */,
+			);
+			name = MailCore2;
+			sourceTree = "<group>";
+		};
+		96A88BA319F03D1B004FC025 /* MeilCoreMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				96A88B8119F022C6004FC025 /* MCOMessageView.h */,
+				96A88B8219F022C6004FC025 /* MCOMessageView.mm */,
+			);
+			name = MeilCoreMessageView;
+			sourceTree = "<group>";
+		};
+		96A88BA419F03D31004FC025 /* MailCoreProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				96A88B7F19F022C6004FC025 /* MCOCIDURLProtocol.h */,
+				96A88B8019F022C6004FC025 /* MCOCIDURLProtocol.mm */,
+			);
+			name = MailCoreProtocol;
+			sourceTree = "<group>";
+		};
+		96A88BA519F03D3A004FC025 /* MailCoreTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				96A88B9819F02348004FC025 /* MCTTableViewCell.h */,
+				96A88B9919F02348004FC025 /* MCTTableViewCell.m */,
+			);
+			name = MailCoreTableViewCell;
+			sourceTree = "<group>";
+		};
+		96A88BA619F03D52004FC025 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				96666BFB19F0033A00C9E84E /* Main.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		96B9212519F0FB1C00496C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96B9212E19F0FB1D00496C99 /* libMailCore.a */,
+				96B9213019F0FB1D00496C99 /* libMailCore-ios.a */,
+				96B9213219F0FB1D00496C99 /* tests */,
+				96B9213419F0FB1D00496C99 /* test-ios.app */,
+				96B9213619F0FB1D00496C99 /* MailCore.framework */,
+				96B9213819F0FB1D00496C99 /* MailCore-ios.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +375,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				96B9213A19F0FB2700496C99 /* PBXTargetDependency */,
 			);
 			name = Gmail;
 			productName = Gmail;
@@ -220,6 +425,12 @@
 			mainGroup = 96666BDD19F0033A00C9E84E;
 			productRefGroup = 96666BE719F0033A00C9E84E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 96B9212519F0FB1C00496C99 /* Products */;
+					ProjectRef = 96B9212419F0FB1C00496C99 /* mailcore2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				96666BE519F0033A00C9E84E /* Gmail */,
@@ -227,6 +438,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		96B9212E19F0FB1D00496C99 /* libMailCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMailCore.a;
+			remoteRef = 96B9212D19F0FB1D00496C99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96B9213019F0FB1D00496C99 /* libMailCore-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMailCore-ios.a";
+			remoteRef = 96B9212F19F0FB1D00496C99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96B9213219F0FB1D00496C99 /* tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = tests;
+			remoteRef = 96B9213119F0FB1D00496C99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96B9213419F0FB1D00496C99 /* test-ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "test-ios.app";
+			remoteRef = 96B9213319F0FB1D00496C99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96B9213619F0FB1D00496C99 /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = 96B9213519F0FB1D00496C99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96B9213819F0FB1D00496C99 /* MailCore-ios.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "MailCore-ios.framework";
+			remoteRef = 96B9213719F0FB1D00496C99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		96666BE419F0033A00C9E84E /* Resources */ = {
@@ -236,6 +492,7 @@
 				96666C0519F0033A00C9E84E /* Images.xcassets in Resources */,
 				96666BF419F0033A00C9E84E /* InfoPlist.strings in Resources */,
 				96666BFD19F0033A00C9E84E /* Main.storyboard in Resources */,
+				96A88B8519F022C6004FC025 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +511,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A88B8C19F022C6004FC025 /* MCOCIDURLProtocol.mm in Sources */,
+				96A88B8D19F022C6004FC025 /* MCOMessageView.mm in Sources */,
+				96A88B8619F022C6004FC025 /* GTMHTTPFetcher.m in Sources */,
+				96A88B9A19F02348004FC025 /* MCTTableViewCell.m in Sources */,
 				96666BFA19F0033A00C9E84E /* AppDelegate.m in Sources */,
 				96666C0019F0033A00C9E84E /* MasterViewController.m in Sources */,
+				96A88B8719F022C6004FC025 /* GTMHTTPFetchHistory.m in Sources */,
+				96A88B8419F022C6004FC025 /* SettingsViewController.m in Sources */,
 				96666BF619F0033A00C9E84E /* main.m in Sources */,
 				96666C0319F0033A00C9E84E /* DetailViewController.m in Sources */,
+				96A88B9619F02318004FC025 /* FXKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +540,11 @@
 			isa = PBXTargetDependency;
 			target = 96666BE519F0033A00C9E84E /* Gmail */;
 			targetProxy = 96666C0F19F0033A00C9E84E /* PBXContainerItemProxy */;
+		};
+		96B9213A19F0FB2700496C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "static mailcore2 ios";
+			targetProxy = 96B9213919F0FB2700496C99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -384,9 +653,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gmail/Gmail-Prefix.pch";
 				INFOPLIST_FILE = "Gmail/Gmail-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-licucore",
+					"-lc++",
+					"-stdlib=libc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,9 +684,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gmail/Gmail-Prefix.pch";
 				INFOPLIST_FILE = "Gmail/Gmail-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-licucore",
+					"-lc++",
+					"-stdlib=libc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +769,7 @@
 				96666C1D19F0033A00C9E84E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96666C1E19F0033A00C9E84E /* Build configuration list for PBXNativeTarget "GmailTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +778,7 @@
 				96666C2019F0033A00C9E84E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
