@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E4C87B6E-7AD2-47BC-A355-0DFC739C851D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Gmail</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BC497A554580ED26950BB7A7D838BE2B1AC4E4BA</key>
+		<string>https://github.com/AlexandrPonomarev/Gmail.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gmail.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BC497A554580ED26950BB7A7D838BE2B1AC4E4BA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AlexandrPonomarev/Gmail.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BC497A554580ED26950BB7A7D838BE2B1AC4E4BA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BC497A554580ED26950BB7A7D838BE2B1AC4E4BA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Gmail</string>
+		</dict>
+	</array>
+</dict>
+</plist>
