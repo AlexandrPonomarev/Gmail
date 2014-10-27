@@ -64,11 +64,11 @@ static NSString *inboxInfoIdentifier = @"InboxStatusCell";
 
 - (void)startLogin
 {
-    [self performSelector:@selector(showSettingsViewController:) withObject:nil afterDelay:0.0];
+    [self showSettingsViewController];
     return;
 }
 
-- (void)showSettingsViewController:(id)sender
+- (void)showSettingsViewController
 {
     [self.imapMessagesFetchOp cancel];
     
@@ -257,21 +257,21 @@ static NSString *inboxInfoIdentifier = @"InboxStatusCell";
             NSString *uidKey = [NSString stringWithFormat:@"%d", message.uid];
             NSString *cachedPreview = self.messagePreviews[uidKey];
             
-            if (cachedPreview)
-            {
+//            if (cachedPreview)
+//            {
                 cell.detailTextLabel.text = cachedPreview;
-            }
-            else
-            {
-                cell.messageRenderingOperation = [self.imapSession plainTextBodyRenderingOperationWithMessage:message folder:@"INBOX"];
-                
-                [cell.messageRenderingOperation start:^(NSString * plainTextBodyString, NSError * error)
-                 {
-                    cell.detailTextLabel.text = plainTextBodyString;
-                    cell.messageRenderingOperation = nil;
-                    self.messagePreviews[uidKey] = plainTextBodyString;
-                }];
-            }
+//            }
+//            else
+//            {
+//                cell.messageRenderingOperation = [self.imapSession plainTextBodyRenderingOperationWithMessage:message folder:@"INBOX"];
+//                
+//                [cell.messageRenderingOperation start:^(NSString * plainTextBodyString, NSError * error)
+//                 {
+//                    cell.detailTextLabel.text = plainTextBodyString;
+//                    cell.messageRenderingOperation = nil;
+//                    self.messagePreviews[uidKey] = plainTextBodyString;
+//                }];
+//            }
             
             return cell;
             break;

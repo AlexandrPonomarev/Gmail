@@ -41,14 +41,6 @@
     _messageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:_messageView];
     
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"FetchFullMessageEnabled"])
-    {
-        [_messageView setDelegate:self];
-        [_messageView setFolder:_folder];
-        [_messageView setMessage:_message];
-    }
-    else
-    {
         [_messageView setMessage:NULL];
         MCOIMAPFetchContentOperation * operation = [_session fetchMessageOperationWithFolder:_folder uid:[_message uid]];
         [_ops addObject:operation];
@@ -66,7 +58,6 @@
             [_messageView setFolder:_folder];
             [_messageView setMessage:msg];
         }];
-    }
 }
 
 - (void)awakeFromNib
@@ -75,6 +66,7 @@
     _ops = [[NSMutableArray alloc] init];
     _pending = [[NSMutableSet alloc] init];
     _callbacks = [[NSMutableDictionary alloc] init];
+    [super awakeFromNib];
 }
 
 - (id)init
@@ -83,7 +75,6 @@
     
     if(self)
     {
-        [self awakeFromNib];
     }
     
     return self;
@@ -223,16 +214,14 @@ typedef void (^DownloadCallback)(NSError * error);
 
 - (NSData *)MCOMessageView:(MCOMessageView *)view dataForPartWithUniqueID:(NSString *)partUniqueID
 {
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"FetchFullMessageEnabled"])
-    {
         MCOAttachment * attachment = (MCOAttachment *) [[_messageView message] partForUniqueID:partUniqueID];
         return [attachment data];
-    }
-    else
-    {
-        NSData * data = [_storage objectForKey:partUniqueID];
-        return data;
-    }
+//    }
+//    else
+//    {
+//        NSData * data = [_storage objectForKey:partUniqueID];
+//        return data;
+//    }
 }
 
 - (void)MCOMessageView:(MCOMessageView *)view fetchDataForPartWithUniqueID:(NSString *)partUniqueID
