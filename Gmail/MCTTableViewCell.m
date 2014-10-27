@@ -1,9 +1,9 @@
 //
 //  MCTTableViewCell.m
-//  Gmail
+//  iOS UI Test
 //
-//  Created by Alexandr Ponomarev on 16.10.14.
-//  Copyright (c) 2014 AleksandrPonomarev. All rights reserved.
+//  Created by Paul Young on 14/07/2013.
+//  Copyright (c) 2013 AppJon. All rights reserved.
 //
 
 #import "MCTTableViewCell.h"

@@ -1,9 +1,9 @@
 
 //  SettingsViewController.m
-//  Gmail
+//  iOS UI Test
 //
-//  Created by Alexandr Ponomarev on 16.10.14.
-//  Copyright (c) 2014 AleksandrPonomarev. All rights reserved.
+//  Created by Jonathan Willing on 4/8/13.
+//  Copyright (c) 2013 AppJon. All rights reserved.
 //
 
 
@@ -13,6 +13,8 @@
 NSString * const UsernameKey = @"username";
 NSString * const PasswordKey = @"password";
 NSString * const HostnameKey = @"hostname";
+NSString * const FetchFullMessageKey = @"FetchFullMessageEnabled";
+NSString * const OAuthEnabledKey = @"OAuth2Enabled";
 
 @implementation SettingsViewController
 
